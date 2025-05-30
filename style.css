@@ -112,14 +112,14 @@ h3 {
     gap: 2rem;
 }
 
-#projects .list-item {
+/* #projects .list-item {
     width: 17rem;
     height: 17rem;
-}
+} */
 
 .list-item {
-    width: 16rem;
-    height: 16rem;
+    max-width: 16rem;
+    min-height: 16rem;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -180,4 +180,58 @@ a:visited {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+/*media query mobile*/
+@media (max-width: 768px) {
+    #title {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #title .image {
+        height: 15rem;
+    }
+
+    #title .image img {
+        height: 100%;
+    }
+
+    #container {
+        padding: 1rem;
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+    section .text {
+        width: 100%;
+    }
+
+    #header img {
+        height: 3rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .list {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-images {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
