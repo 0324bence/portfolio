@@ -121,6 +121,7 @@ h3 {
 .list-item p {
     font-size: 1.2rem;
     color: hsl(210, 3%, 80%);
+    flex: 10;
 }
 
 .list-item .item-images {
@@ -128,6 +129,7 @@ h3 {
     flex: 1 0;
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .list-item .item-links {
@@ -151,7 +153,7 @@ a:visited {
     height: 2rem;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 10px;
+    padding: 1px;
 }
 
 .text {
